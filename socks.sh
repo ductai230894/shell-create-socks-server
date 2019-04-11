@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "running socks scripts"
 
-wget --no-check-certificate https://raw.github.com/Lozy/danted/master/install.sh -O install.sh 
+curl -L -O https://raw.github.com/Lozy/danted/master/install.sh 
 bash install.sh
 
 firewall-cmd --zone=public --add-port=2016/tcp --permanent
